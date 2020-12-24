@@ -20,6 +20,8 @@ namespace Benday.SampleApp.WebUi.Controllers
 
         public IActionResult Index()
         {
+            ViewData["currenttime"] = DateTime.Now.ToString();
+            
             return View();
         }
 
